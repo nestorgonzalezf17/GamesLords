@@ -5,9 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:GamesLords": "node dist/GamesLords/server/server.mjs"
+    "test": "ng e2e",
+    "deploy": "ng build --base-href \"https://nestorgonzalezf17.github.io/GamesLords/\" npx angular-cli-ghpages --dir=dist/TechStudio"
   },
   "prettier": {
     "printWidth": 100,

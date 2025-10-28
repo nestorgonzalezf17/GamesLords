@@ -11,9 +11,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular/build:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "browser": "src/main.ts",
+            "outputPath": "dist/GamesLords",
+            "index": "src/index.html",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -21,17 +23,13 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "/"
               }
             ],
             "styles": [
               "src/styles.css"
-            ],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            ]
           },
           "configurations": {
             "production": {
@@ -47,7 +45,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "https://nestorgonzalezf17.github.io/GamesLords/"
             },
             "development": {
               "optimization": false,
