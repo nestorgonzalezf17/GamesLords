@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng e2e",
-    "deploy": "ng build --base-href \"https://nestorgonzalezf17.github.io/GamesLords/\" npx angular-cli-ghpages --dir=dist/TechStudio"
+    "deploy": "ng build --base-href \"https://nestorgonzalezf17.github.io/GamesLords/\" npx angular-cli-ghpages --dir=dist/GamesLords"
   },
   "prettier": {
     "printWidth": 100,
